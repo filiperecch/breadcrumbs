@@ -16,19 +16,19 @@ create_project_directories <- function(style = "default", license = "none", vign
 
   # define directories
   default_template <-
-    c(project_cloud_dir, "munge", "analysis", "R",
-      fs::path(project_cloud_dir, "reports"),
-      fs::path(project_cloud_dir, "data"),
-      fs::path(project_cloud_dir, "data", "raw")
+    c("data", "munge", "analysis", "R", "presentations",
+      fs::path("analysis", "tables"),
+      fs::path("analysis", "figures"),
+      fs::path("data", "raw")
     )
   learning_template <-
-    c(project_cloud_dir, "munge", "vignette", "R",
+    c("data", "munge", "analysis", "R", "presentations",
+      fs::path("analysis", "tables"),
+      fs::path("analysis", "figures"),
+      fs::path("data", "raw"),
       fs::path("vignette", "daily_log"),
       fs::path("vignette", "exercises"),
-      fs::path("vignette", "summaries"),
-      fs::path(project_cloud_dir, "reports"),
-      fs::path(project_cloud_dir, "data"),
-      fs::path(project_cloud_dir, "data", "raw")
+      fs::path("vignette", "summaries")
     )
   minimal_template <-
     c("munge", "analysis", "data", fs::path("data", "raw"))
