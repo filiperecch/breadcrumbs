@@ -12,13 +12,18 @@ add_file_paths <- function(dir_R = here::here()){
 
   file_names_template <-
     glue::glue('
-dir_proj <- here::here()
-dir_cloud <- here::here("cloud_{project_name}")
-dir_data <- fs::path(dir_cloud, "data")
-dir_raw <- fs::path(dir_data, "raw")
-dir_munge <- here::here("munge")
-dir_analysis <- here::here("analysis")
-dir_reports <- fs::path(dir_cloud, "reports")
+project_root <- here::here()
+data_root <- here::here("data")
+data_raw <- fs::path(data_root, "raw")
+analysis_root <- here::here("analysis")
+figures_folder <- fs::path(analysis_root, "figures")
+tables_folder <- fs::path(analysis_root, "tables")
+pdfs_folder <- fs::path(analysis_root, "pdfs")
+munge_root <- here::here("munge")
+munge_R <- fs::path(munge_root, "R_script")
+munge_stata <- fs::path(munge_root, "stata_do")
+presentations_root <- here::here("presentations")
+r_objects_folder <- here::here("R")
 ')
     writeLines(file_names_template, fs::path(dir_R, "file_paths.R"))
-  }
+}
