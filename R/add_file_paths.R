@@ -24,7 +24,7 @@ munge_R <- fs::path(munge_root, "R_script")
 munge_stata <- fs::path(munge_root, "stata_do")
 presentations_root <- here::here("presentations")
 r_objects_folder <- here::here("R")
-suppor_filest <- here::here("support_files")
+suppor_files <- here::here("support_files")
 ')
     writeLines(file_names_template, fs::path(dir_R, "file_paths.R"))
 }
