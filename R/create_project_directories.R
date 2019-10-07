@@ -16,7 +16,7 @@ create_project_directories <- function(style = "default", license = "none", vign
 
   # define directories
   default_template <-
-    c("data", "munge", "analysis", "R", "presentations", "suppor_files",
+    c("data", "munge", "analysis", "R", "presentations", "support_files",
       fs::path("munge", "R_script"),
       fs::path("munge", "stata_do"),
       fs::path("analysis", "tables"),
@@ -25,7 +25,7 @@ create_project_directories <- function(style = "default", license = "none", vign
       fs::path("data", "raw")
     )
   learning_template <-
-    c("data", "munge", "analysis", "R", "presentations", "suppor_files",
+    c("data", "munge", "analysis", "R", "presentations", "support_files",
       fs::path("munge", "R_script"),
       fs::path("munge", "stata_do"),
       fs::path("analysis", "tables"),
