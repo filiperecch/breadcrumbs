@@ -22,6 +22,7 @@ create_project_directories <- function(style = "default", license = "none", vign
       fs::path("analysis", "tables"),
       fs::path("analysis", "figures"),
       fs::path("analysis", "pdfs"),
+      fs::path("analysis", "reports"),
       fs::path("data", "raw")
     )
   learning_template <-
@@ -31,6 +32,7 @@ create_project_directories <- function(style = "default", license = "none", vign
       fs::path("analysis", "tables"),
       fs::path("analysis", "figures"),
       fs::path("analysis", "pdfs"),
+      fs::path("analysis", "reports"),
       fs::path("data", "raw"),
       fs::path("vignette", "daily_log"),
       fs::path("vignette", "exercises"),
