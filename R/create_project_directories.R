@@ -16,9 +16,9 @@ create_project_directories <- function(style = "default", license = "none", vign
 
   # define directories
   default_template <-
-    c("data", "munge", "analysis", "R", "presentations", "support_files",
-      fs::path("munge", "R_script"),
-      fs::path("munge", "stata_do"),
+    c("data", "script", "analysis", "R", "presentations", "support_files",
+      fs::path("script", "R_script"),
+      fs::path("script", "stata_do"),
       fs::path("analysis", "tables"),
       fs::path("analysis", "figures"),
       fs::path("analysis", "pdfs"),
@@ -26,9 +26,9 @@ create_project_directories <- function(style = "default", license = "none", vign
       fs::path("data", "raw")
     )
   learning_template <-
-    c("data", "munge", "analysis", "R", "presentations", "support_files",
-      fs::path("munge", "R_script"),
-      fs::path("munge", "stata_do"),
+    c("data", "script", "analysis", "R", "presentations", "support_files",
+      fs::path("script", "R_script"),
+      fs::path("script", "stata_do"),
       fs::path("analysis", "tables"),
       fs::path("analysis", "figures"),
       fs::path("analysis", "pdfs"),
@@ -39,7 +39,7 @@ create_project_directories <- function(style = "default", license = "none", vign
       fs::path("vignette", "summaries")
     )
   minimal_template <-
-    c("munge", "analysis", "data", fs::path("data", "raw"))
+    c("script", "analysis", "data", fs::path("data", "raw"))
 
   # populate project directory with files and subdirectories
   if (style == "default") {
