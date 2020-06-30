@@ -14,7 +14,7 @@ add_file_paths <- function(dir_R = here::here()){
     glue::glue('
 path_root <- here::here()
 path_data_root <- here::here("data")
-path_data_raw <- fs::path(data_root, "raw")
+path_data_raw <- fs::path(path_data_root, "raw")
 path_analysis_root <- here::here("analysis")
 path_figures_folder <- fs::path(path_analysis_root, "figures")
 path_tables_folder <- fs::path(path_analysis_root, "tables")
